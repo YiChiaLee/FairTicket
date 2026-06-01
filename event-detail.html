@@ -1,1 +1,101 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Event Detail | FairTicket</title><link rel="stylesheet" href="style.css?v=5"></head><body><header class="navbar inner-nav"><div class="logo" onclick="location.href='index.html'"><span class="logo-icon">▦</span><span>FairTicket</span></div><nav><a href="index.html">Home</a><a href="events.html">Events</a><a href="how.html">How It Works</a><a href="my-tickets.html">My Tickets</a><a href="resale.html">Resale</a><a href="admin.html">⚙ Admin</a><button class="nav-btn" onclick="location.href='events.html'">Browse Events</button></nav></header><main class="detail-page"><section class="detail-grid"><div><div id="detailPoster" class="detail-poster"></div><div class="rule-box compact"><div class="rule-head"><span class="rule-title">Event Rules</span><span class="rule-date">Real-name required</span></div><p>Each ID or passport may register once. Lottery winners must complete payment before the deadline. Unpaid tickets return to the rolling lottery pool.</p></div></div><div class="detail-info"><p id="detailType" class="eyebrow">CONCERT</p><h1 id="detailTitle">Event Title</h1><p id="detailMeta" class="detail-meta"></p><div class="status-card"><h3>Ticketing Status</h3><div class="status-line"><span>Registration</span><strong>Open</strong></div><div class="status-line"><span>Lottery Draw</span><strong>Jun 10</strong></div><div class="status-line"><span>Payment Deadline</span><strong>Jun 12</strong></div><div class="status-line"><span>Final FCFS Sale</span><strong>Jun 15</strong></div></div><div class="action-stack"><button class="main-btn" onclick="location.href='lottery.html'">Register for Lottery</button><button class="outline-btn" onclick="location.href='seat-selection.html'">Select Seat for FCFS</button><button class="outline-btn" onclick="location.href='how.html'">View Full Process</button></div></div></section></main><script src="data.js?v=5"></script><script src="event-detail.js?v=5"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Detail | FairTicket</title>
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+
+<body>
+  <header class="navbar inner-nav">
+    <div class="logo" onclick="location.href='index.html'">
+      <span class="logo-icon">▦</span>
+      <span>FairTicket</span>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="how.html">How It Works</a>
+      <a href="my-tickets.html">My Tickets</a>
+      <a href="resale.html">Resale</a>
+      <a href="admin.html">⚙ Admin</a>
+
+      <button class="nav-btn" onclick="location.href='events.html'">
+        Browse Events
+      </button>
+    </nav>
+  </header>
+
+  <main class="detail-page">
+    <section class="detail-grid">
+      <div>
+        <div id="detailPoster" class="detail-poster"></div>
+
+        <div class="rule-box compact">
+          <div class="rule-head">
+            <span class="rule-title">Event Rules</span>
+            <span class="rule-date">Real-name required</span>
+          </div>
+
+          <p>
+            Each ID or passport may register once. Lottery winners must
+            complete payment before the deadline. Unpaid tickets return to the
+            rolling lottery pool.
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-info">
+        <p id="detailType" class="eyebrow">CONCERT</p>
+
+        <h1 id="detailTitle">Event Title</h1>
+
+        <p id="detailMeta" class="detail-meta"></p>
+
+        <div class="status-card">
+          <h3>Ticketing Status</h3>
+
+          <div class="status-line">
+            <span>Registration</span>
+            <strong>Open</strong>
+          </div>
+
+          <div class="status-line">
+            <span>Lottery Draw</span>
+            <strong>Mar 16 08:00</strong>
+          </div>
+
+          <div class="status-line">
+            <span>Payment Deadline</span>
+            <strong>May 29 23:59</strong>
+          </div>
+
+          <div class="status-line">
+            <span>Final FCFS Sale</span>
+            <strong>Jun 01 08:00</strong>
+          </div>
+        </div>
+
+        <div class="action-stack">
+          <button class="main-btn" onclick="location.href='lottery.html'">
+            Register for Lottery
+          </button>
+
+          <button class="outline-btn" onclick="location.href='seat-selection.html'">
+            Select Seat for FCFS
+          </button>
+
+          <button class="outline-btn" onclick="location.href='how.html'">
+            View Full Process
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js?v=5"></script>
+  <script src="event-detail.js?v=5"></script>
+</body>
+</html>
